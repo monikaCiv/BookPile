@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#230c22</color>
+    <color name="colorPrimary">#933c73</color>
+    <color name="colorAccent">#EC407A</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="dirty_white">#F5F5F5</color>
+
+    <color name="shade1">#200820</color>
+    <color name="shade2">#880e4f</color>
+    <color name="shade3">#ad1457</color>
+    <color name="shade4">#412039</color>
+    <color name="shade5">#733162</color>
+    <color name="shade6">#f06292</color>
+
+    <color name="s1">#733162</color>
+    <color name="s2">#944a7b</color>
+    <color name="s3">#52204a</color>
+    <color name="s4">#200820</color>
+    <color name="s5">#412039</color>
+    <color name="s6">#94527b</color>
+
+    <color name="shade7">#230c22</color>
+    <color name="shade8">#441940</color>
+    <color name="shade9">#632754</color>
+    <color name="shade10">#833B6C</color>
+    <color name="shade11">#5F1A37</color>
+    <color name="shade12">#CB807D</color>
+
+    <color name="old_rose">#CB807D</color>
+    <color name="imperial_purple">#5F1A37</color>
+    <color name="tuscany">#B7999C</color>
+
+    <color name="dim_gray">#646E68</color>
+    <color name="licorice">#1F0318</color>
+    <color name="tuscan_red">#764248</color>
+
+</resources>

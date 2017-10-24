@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.monique.hrpaknjiga.activities.DiaryActivity"
+    android:background="@color/shade3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activityTitle"
+        android:text="Trenutno čitam"
+        android:textColor="@color/dirty_white"
+        android:textSize="24sp"
+        android:padding="20dp"
+        android:background="@color/shade4"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/currentBooksList"
+        android:layout_below="@+id/activityTitle">
+    </ListView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-50dp"
+        android:background="#00000000"
+        android:id="@+id/addBook"
+        android:adjustViewBounds="true"
+        android:scaleX="0.35"
+        android:scaleY="0.35">
+    </ImageButton>
+
+</RelativeLayout>

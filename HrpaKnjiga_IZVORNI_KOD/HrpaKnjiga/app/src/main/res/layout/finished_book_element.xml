@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shade2"
+    android:padding="0dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:textColor="@color/dirty_white"
+        android:textSize="20sp"
+        android:id="@+id/listSeparator"
+        android:background="@color/shade4"
+        android:paddingLeft="20dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"
+        android:adjustViewBounds="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-10dp"
+        android:id="@+id/closeButton"
+        android:onClick="deleteFinishedBookHandler"
+        android:background="#00000000"
+        android:scaleX="0.2"
+        android:scaleY="0.2"
+        android:layout_below="@id/listSeparator"
+        android:layout_marginRight="-20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/book"
+        android:id="@+id/bookImage"
+        android:maxHeight="80dp"
+        android:maxWidth="90dp"
+        android:layout_marginRight="10dp"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/listSeparator"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textTitle"
+        android:textColor="@color/dirty_white"
+        android:layout_toRightOf="@id/bookImage"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/listSeparator"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textAuthor"
+        android:layout_below="@id/textTitle"
+        android:text="Author"
+        android:layout_toRightOf="@id/bookImage"
+        android:textColor="@color/dirty_white"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Date finished"
+        android:id="@+id/textDateFinished"
+        android:textColor="@color/dirty_white"
+        android:layout_below="@id/textAuthor"
+        android:layout_alignLeft="@id/bookImage"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Description"
+        android:id="@+id/textDescription"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/dirty_white"
+        android:layout_below="@+id/textDateFinished"
+        android:layout_alignLeft="@+id/bookImage"
+        android:layout_alignStart="@+id/bookImage"
+        android:lineSpacingExtra="5sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textId"
+        android:text="hahah"
+        android:textColor="#00000000"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingStars"
+        android:layout_below="@+id/textDescription"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/_5stars"
+        android:maxWidth="170dp"/>
+
+</RelativeLayout>

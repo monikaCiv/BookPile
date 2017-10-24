@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/fault_in_our_stars"
+        android:adjustViewBounds="true"
+        android:id="@+id/postImage"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookPostTitle"
+        android:layout_below="@id/postImage"
+        android:layout_marginTop="20dp"
+        android:text="POST TITLE"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/shade4"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookPostAuthor"
+        android:layout_below="@id/bookPostTitle"
+        android:layout_marginTop="5dp"
+        android:text="POST AUTHOR"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookPostDate"
+        android:layout_below="@id/bookPostAuthor"
+        android:layout_marginTop="5dp"
+        android:text="POST DATE"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

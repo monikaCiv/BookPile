@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shade3"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/book"
+        android:id="@+id/bookImage"
+        android:maxHeight="80dp"
+        android:maxWidth="90dp"
+        android:layout_marginRight="10dp"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textTitle"
+        android:textColor="@color/dirty_white"
+        android:layout_toRightOf="@id/bookImage"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textAuthor"
+        android:layout_below="@id/textTitle"
+        android:text="Author"
+        android:layout_toRightOf="@id/bookImage"
+        android:textColor="@color/dirty_white"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Date started"
+        android:id="@+id/textDateStarted"
+        android:textColor="@color/dirty_white"
+        android:layout_below="@id/textAuthor"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Description"
+        android:id="@+id/textDescription"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/dirty_white"
+        android:layout_below="@+id/textDateStarted"
+        android:layout_alignLeft="@+id/bookImage"
+        android:layout_alignStart="@+id/bookImage"
+        android:lineSpacingExtra="5sp"/>
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_below="@id/textDescription"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Progress/Pages"
+        android:id="@+id/textProgressPercent"
+        android:textColor="@color/dirty_white"
+        android:layout_below="@id/progressBar"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uredi"
+        android:id="@+id/editButton"
+        android:layout_below="@+id/textProgressPercent"
+        android:layout_alignParentRight="true"
+        android:onClick="editButtonHandler"
+        android:background="#30000000"
+        android:textColor="@color/dirty_white"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/edit"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ukloni"
+        android:id="@+id/deleteButton"
+        android:layout_below="@+id/textProgressPercent"
+        android:layout_toLeftOf="@id/editButton"
+        android:onClick="deleteButtonHandler"
+        android:background="#30000000"
+        android:textColor="@color/dirty_white"
+        android:drawableLeft="@drawable/bin"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textId"
+        android:text="hahah"
+        android:textColor="#00000000"/>
+
+</RelativeLayout>

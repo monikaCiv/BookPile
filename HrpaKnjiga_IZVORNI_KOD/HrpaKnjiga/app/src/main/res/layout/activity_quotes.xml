@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.monique.hrpaknjiga.activities.QuotesActivity"
+    android:background="@color/imperial_purple"
+    android:padding="30dp"
+    android:id="@+id/relativeLayout">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getQuoteButtonText"
+        android:id="@+id/getQuoteButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:height="@dimen/buttonHeight"
+        android:textSize="@dimen/buttonTextSize"
+        android:textColor="#ffffff"
+        android:background="#30000000"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/quote"
+        android:id="@+id/quoteUpImage"
+        android:adjustViewBounds="true"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:alpha="0.9"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/quoteText"
+        android:textColor="@color/dirty_white"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_below="@+id/quoteUpImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:lineSpacingExtra="2sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/quote2"
+        android:id="@+id/quoteDownImage"
+        android:adjustViewBounds="true"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:layout_below="@+id/quoteText"
+        android:layout_alignRight="@+id/authorText"
+        android:layout_alignEnd="@+id/authorText"
+        android:alpha="0.9"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/bookText"
+        android:textColor="@color/dirty_white"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/quoteDownImage"
+        android:layout_alignRight="@+id/quoteDownImage"
+        android:layout_alignEnd="@+id/quoteDownImage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Small Text"
+        android:id="@+id/authorText"
+        android:textColor="@color/dirty_white"
+        android:layout_below="@+id/bookText"
+        android:layout_alignRight="@+id/getQuoteButton"
+        android:layout_alignEnd="@+id/getQuoteButton" />
+
+</RelativeLayout>

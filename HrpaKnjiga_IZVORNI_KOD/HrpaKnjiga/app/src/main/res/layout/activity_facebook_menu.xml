@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="0dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/bookIdButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/remove_tile_space_margin"
+            android:background="@color/shade4"
+            android:text="BOOK IDs"
+            android:textColor="@color/dirty_white"
+            android:textSize="20sp"
+            android:drawableTop="@drawable/book_id"
+            android:paddingTop="50dp"
+            android:paddingBottom="0dp"/>
+
+        <Button
+            android:id="@+id/reviewButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/remove_tile_space_margin"
+            android:background="@color/shade2"
+            android:text="MINI RECENZIJE"
+            android:textColor="@color/dirty_white"
+            android:textSize="20sp"
+            android:drawableTop="@drawable/book_review"
+            android:paddingTop="70dp"
+            android:paddingBottom="0dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="0dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/listsButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/remove_tile_space_margin"
+            android:background="@color/shade3"
+            android:text="LISTE I TAGOVI"
+            android:textColor="@color/dirty_white"
+            android:textSize="20sp"
+            android:drawableTop="@drawable/book_lists"
+            android:paddingTop="60dp"
+            android:paddingBottom="0dp"/>
+
+        <Button
+            android:id="@+id/movieButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/shade6"
+            android:layout_margin="@dimen/remove_tile_space_margin"
+            android:text="KNJIGA I FILM"
+            android:textColor="@color/dirty_white"
+            android:textSize="20sp"
+            android:drawableTop="@drawable/book_to_movie"
+            android:paddingTop="65dp"
+            android:paddingBottom="0dp"/>
+    </LinearLayout>
+
+</LinearLayout>

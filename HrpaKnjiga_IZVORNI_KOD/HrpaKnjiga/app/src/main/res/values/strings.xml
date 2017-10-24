@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HrpaKnjiga</string>
+    <string name="quotes_button_text">CITATI</string>
+    <string name="reading_history_button_text">POVIJEST</string>
+    <string name="reading_diary_button_text">DNEVNIK</string>
+    <string name="facebook_button_text">HRPA KNJIGA</string>
+    <string name="location_button_text">LOKACIJA</string>
+    <string name="info_button_text">INFORMACIJE</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="getQuoteButtonText">NOVI CITAT</string>
+    <string name="title_activity_diary2">DiaryActivity2</string>
+    <string name="saveNewBookButton">SPREMI</string>
+    <string name="enterBookInfo">O knjizi</string>
+    <string name="insertBookTitle">Unesite naslov knjige.</string>
+    <string name="title_activity_location">Map</string>
+
+    <string name="facebook_app_id">202611433477554</string>
+    <string name="google_app_id">AIzaSyCL1beA9kdGt7jLAzW-tEcIGH-xUgNVayk</string>
+
+</resources>

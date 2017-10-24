@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context="com.example.monique.hrpaknjiga.activities.FacebookActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activityTitle"
+        android:text="Book IDs"
+        android:textColor="@color/dirty_white"
+        android:textSize="24sp"
+        android:padding="20dp"
+        android:background="@color/shade4"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postsList"
+        android:layout_below="@+id/activityTitle">
+    </ListView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/popUpView"
+        android:layout_margin="20dp"
+        android:background="@color/dirty_white"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/postTitle"
+                android:text="NASLOV KNJIGE"
+                android:textSize="24sp"
+                android:textColor="@color/shade4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/postAuthor"
+                android:layout_below="@+id/postTitle"
+                android:textSize="18sp"
+                android:text="Pisac Knjige"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/postDescription"
+                android:text="Ovdje ide opis aplikacije i tako dalje."
+                android:layout_below="@+id/postAuthor"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5sp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/closeButton"
+                android:text="ZATVORI"
+                android:textSize="14sp"
+                android:padding="3dp"
+                android:background="@color/shade4"
+                android:textColor="@color/dirty_white"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/postDate"
+                android:layout_marginTop="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/postDate"
+                android:text="DD.MM.YYYY."
+                android:layout_below="@+id/postDescription"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:lineSpacingExtra="5sp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

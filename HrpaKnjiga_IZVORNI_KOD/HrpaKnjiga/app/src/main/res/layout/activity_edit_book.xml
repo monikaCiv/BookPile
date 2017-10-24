@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shade4">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@color/shade4"
+    tools:context="com.example.monique.hrpaknjiga.activities.EditBookActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookImage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/book"
+        android:maxWidth="25dp"
+        android:maxHeight="20dp"
+        android:layout_marginTop="15dp"
+        android:alpha="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/saveNewBookButton"
+        android:height="@dimen/buttonHeight"
+        android:textSize="@dimen/buttonTextSize"
+        android:background="#30000000"
+        android:textColor="#ffffff"
+        android:id="@+id/saveChangesBook"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/readCheck"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dirty_white"
+        android:id="@+id/titleLabel"
+        android:layout_marginTop="25dp"
+        android:text="Naslov"
+        android:layout_below="@id/bookImage"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTitle"
+        android:layout_below="@+id/titleLabel"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/shade6"
+        android:hint="@string/insertBookTitle"
+        android:textColorHint="#40000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dirty_white"
+        android:id="@+id/authorLabel"
+        android:layout_below="@+id/editTitle"
+        android:layout_marginTop="10dp"
+        android:text="Autor"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAuthor"
+        android:layout_below="@+id/authorLabel"
+        android:layout_centerHorizontal="true"
+        android:hint="Unesite ime i prezime autora."
+        android:textColor="@color/shade6"
+        android:textColorHint="#40000000"
+        android:textColorHighlight="@color/dirty_white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dirty_white"
+        android:id="@+id/descriptionLabel"
+        android:layout_below="@+id/editAuthor"
+        android:layout_marginTop="10dp"
+        android:text="Opis"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editDescription"
+        android:layout_below="@+id/descriptionLabel"
+        android:layout_centerHorizontal="true"
+        android:hint="Unesite kratak opis knjige."
+        android:textColor="@color/shade6"
+        android:textColorHint="#40000000"
+        android:textColorHighlight="@color/dirty_white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dirty_white"
+        android:id="@+id/pagesLabel"
+        android:layout_below="@+id/editDescription"
+        android:layout_marginTop="10dp"
+        android:text="Broj stranica"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editPages"
+        android:layout_below="@+id/pagesLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/shade6"
+        android:textColorHighlight="@color/dirty_white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dirty_white"
+        android:id="@+id/progressLabel"
+        android:layout_below="@+id/editDescription"
+        android:layout_toRightOf="@+id/pagesLabel"
+        android:layout_alignLeft="@+id/editProgress"
+        android:layout_marginTop="10dp"
+        android:text="Pročitano"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editProgress"
+        android:layout_alignBottom="@+id/editPages"
+        android:layout_toRightOf="@+id/editPages"
+        android:layout_below="@+id/progressLabel"
+        android:textColor="@color/shade6"
+        android:textColorHighlight="@color/dirty_white"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/readCheck"
+        android:layout_below="@+id/editPages"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:button="@drawable/custom_checkbox"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Označi kao pročitano"
+        android:textSize="18sp"
+        android:textColor="@color/dirty_white"
+        android:layout_toLeftOf="@id/readCheck"
+        android:layout_below="@id/editPages"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
+</ScrollView>

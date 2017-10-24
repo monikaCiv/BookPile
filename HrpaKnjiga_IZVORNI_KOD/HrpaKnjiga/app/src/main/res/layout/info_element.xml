@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoImage"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/fault_in_our_stars"
+        android:maxWidth="160dp"
+        android:maxHeight="160dp"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoTitle"
+        android:layout_toRightOf="@+id/infoImage"
+        android:text="Title"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="14dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoDescription"
+        android:text="Description"
+        android:layout_below="@+id/infoTitle"
+        android:textSize="12dp"
+        android:layout_toRightOf="@+id/infoImage"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klik na link za više"
+        android:layout_below="@+id/infoDescription"
+        android:layout_alignParentRight="true"
+        android:textSize="12dp"
+        android:textColor="@color/shade6"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
